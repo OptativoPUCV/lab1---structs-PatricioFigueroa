@@ -70,3 +70,16 @@ exercises.c:107:33: note: expected ‘Vector *’ but argument is of type ‘int
 cc1: all warnings being treated as errors
 Compilation failed
 984c92d
+Fri 17 Mar 2023 05:33:24 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:119:17: error: expected expression before ‘{’ token
+  119 |   a->datos[2] = {a1,a2};
+      |                 ^
+exercises.c:120:17: error: expected expression before ‘{’ token
+  120 |   b->datos[2] = {b1,b2};
+      |                 ^
+Compilation failed
+95766a9
