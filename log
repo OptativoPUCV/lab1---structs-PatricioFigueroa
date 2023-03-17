@@ -83,3 +83,16 @@ exercises.c:120:17: error: expected expression before ‘{’ token
       |                 ^
 Compilation failed
 95766a9
+Fri 17 Mar 2023 05:36:57 PM UTC: 
+ exercises.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:121:14: error: expected expression before ‘{’ token
+  121 |   a->datos = {a1,a2};
+      |              ^
+exercises.c:122:14: error: expected expression before ‘{’ token
+  122 |   b->datos = {b1,b2};
+      |              ^
+Compilation failed
+ac68dea
