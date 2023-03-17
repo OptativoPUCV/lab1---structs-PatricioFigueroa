@@ -46,3 +46,27 @@ Fri 17 Mar 2023 12:40:03 AM UTC:
  tests:  7|1
 total_score: 60/70
 dc48d17
+Fri 17 Mar 2023 05:31:52 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:120:9: error: passing argument 1 of ‘sumaV’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  120 |   sumaV(a,b,c);
+      |         ^
+      |         |
+      |         int *
+exercises.c:107:21: note: expected ‘Vector *’ but argument is of type ‘int *’
+  107 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |            ~~~~~~~~~^
+exercises.c:120:11: error: passing argument 2 of ‘sumaV’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  120 |   sumaV(a,b,c);
+      |           ^
+      |           |
+      |           int *
+exercises.c:107:33: note: expected ‘Vector *’ but argument is of type ‘int *’
+  107 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                        ~~~~~~~~~^
+cc1: all warnings being treated as errors
+Compilation failed
+984c92d
